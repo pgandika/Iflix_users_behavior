@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>IFLIX User behavior analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<h1><strong>IFLIX User behavior analysis</strong>
+				</div>
+				<div class="inner">
+					<a href="https://pgandika.github.io/Andika_Gumilang_Portfolio/" class="button small">Home</a>
+					<a href="https://pgandika.github.io/Andika_Gumilang_Portfolio/" class="button small">Projects</a>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h1>RevoU Final Project</h1>
+						</header>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-8"><span class="image fit"><img src="images/finalproject 1.JPG"></span></div>
+						</div><br>
+							
+						<h2>Project Summary</h2>
+						<p>This project purpose is to find out  holistic view of the IFLIX customer, analyze the data and generate useful insights to drive an informed decision-making process, The dataset originally came from kaggle.And this 5 main things in this project : : </p>
+						<ul>
+						<li>Cleaned raw data using various method and make sure the data is feasible to analyze.</li>
+						<li>Conducted exploratory data analysis (EDA) to help find out what variable were causing booking cancellation.</li>
+						<li>Made a customer segmentation to help determine the quality of users</li>
+						<li>Built Algorithm to perform a Market Basket Analysis</li>
+						<li>Create predictive model that have the highest predictive power to help increase the quality of users.</li>
+						</ul>
+
+						<p><h2>Project Files</h2></p>
+						For a more comprehensive analysis and visualization, please open the project files.
+						<ul>
+						<li><a href="https://www.canva.com/design/DAE_1TDo2JU/2glgAWR5B0apRnk-LJ-4Pw/view?utm_content=DAE_1TDo2JU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton#22">Presentation Deck</a></li>
+						<li><a href="https://colab.research.google.com/drive/1eUi4W49JcPf4lYPCJ0Ltykz2123">Google Collab</a></li>
+						<li><a href="https://github.com/pgandika/Hotel_uwak">Github Repository</a></li>
+					</ul>
+					</section>
+
+				<!-- Two -->
+					<section id="two">
+						<h2>Project Background</h2>
+
+						<p>Increasingly businesses today are being forced to implement a more customer centric approach to their business strategy. This is in response to rapidly changing consumer behavior and the compelling move to digital platforms. To be able to respond and make better, faster decisions, business need a clear view of their decision-making strategies and the ability to apply risk analytics, strategy improvements, automation and advanced analytics. Before a company can personalize experiences for customers, it must first have a holistic view of the customer, which can often be a challenge, This project purpose is to find out holistic view of the IFLIX customer, analyze the data and generate useful insights to drive an informed decision-making process</p>
+					</section>
+				
+				<!-- Three -->
+				<section id="three">
+					<h2>Data Scope</h2>
+					<div class="row gtr-50 gtr-uniform">
+						<div class="col-8"><span class="image fit"><img src="images/finalproject 3.JPG"></span></div>
+					</div><br>
+					<p>We used data from <a href = "https://www.kaggle.com/datasets/aungpyaeap/movie-streaming-datasets-iflix">Movie streaming datasets iflix</a>. The dataset provides data from global inflix consumen in 2018-2019, that contain 110k unique registered users form 40 contries, 55k users are female, and 55k users are male,17k unique films, and  542k recorded activities  </p>
+					<p><h4>- <a href="https://colab.research.google.com/drive/1DqSjavmzAkyvowJFfjjvbhMwHau123">Data_users_dataset</a></h4></p>
+					<ul>
+						<li>UserID&emsp;&emsp;&emsp;&emsp;&nbsp; : Unique identifier of user</li>
+						<li>Country Code&emsp;&nbsp; : Country code where user registered</li>
+						<li>Gander&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp; : user's gander </li>
+						<li>Age&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; : user's Age </li>
+						<li>Interest&emsp;&emsp;&emsp;&emsp;&nbsp;: user's intereset (genre)</li>
+					</ul>
+					<p><h4>- <a href="https://colab.research.google.com/drive/1DqSjavmzAkyvowJFfjjvbhMwHau123">Plays_dataset</a></h4></p>
+					<ul>
+						<li>platform &emsp;&emsp;&emsp;&emsp;&emsp;: Platform of consumption</li>
+						<li>minuted_viewed&emsp;&nbsp; : Total number of minutes viewed</li>
+					</ul>
+					<p><h4>- <a href="https://colab.research.google.com/drive/1DqSjavmzAkyvowJFfjjvbhMwHau123">Assets_dataset</a></h4></p>
+					<ul>
+						<li>AssetID &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;: Unique identifier of video content, at the most granular level (a movie or an episode of a TV series)</li>
+						<li>Showtype&emsp;&emsp;&emsp;&emsp;&emsp;: Type of content, whether the asset is a movie or an episode of a TV series</li>
+						<li>Genre&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; : Genre of content</li>
+						<li>Source_language&emsp;&nbsp; : Orginal languange of the content </li>
+						<li>Running_minutes&emsp;&nbsp;&nbsp;: Runtime of content</li>
+					</ul>
+				</section>
+
+				<!-- Six -->
+				<section id="six">
+					<h2>Data Analysis</h2>
+					<div class="row gtr-50 gtr-uniform">
+						<div class="col-4"><span class="image fit"><img src="images/finalproject 19.JPG"></span></div>
+					</div><br>
+					<p>Starting with discribing the dataset that have succecfully cleanned, we found from 542k user-watching activity, 50% user activities only watch 0-30% of total asset duration, it indicate the lack of user loyalty and inability to stick on the platform</p>
+				
+					
+					<div class="row gtr-50 gtr-uniform">
+						<div class="col-6"><span class="image fit"><img src="images/finalproject 20.JPG"></span></div>
+					</div><br>
+					<p>Then we create customer segmentation to determine quality of users based on total assets/films that user watch, the average of persetange(%) of duration film that users watch, and average amount of re-watch films that user watch we found that there are 4 types of users that we named as :</p>
+					<ul>
+						<li>Low quality user that contain 70.933 users, They watch 2 films, and they just finish 25% of duration film on average, and they never re-watch the same film</li>
+						<li>Medium quality user that contain 17.026 users, They watch 15 films, and they finish 57% of duration film on average, and they never re-watch the same film</li>
+						<li>High quality user that contain 86 users, They watch 43 films, and they finish 79% of duration film on average, and they re-watch 2  films </li>
+						<li>Loyal quality user that contain 1.557 users, They watch 86 films, and they finish 92% of duration film on average, and they re-watch 20  films</li>
+					</ul>
+				
+					<div class="row gtr-50 gtr-uniform">
+						<div class="col-6"><span class="image fit"><img src="images/finalproject 21.JPG"></span></div>
+					</div><br>
+					<p>From the data we know that Low quality users dominated 70% of our total users, so we check the distribution of customers segmentation in each country, and we found that this problem (low quality users) dominated in every country. We conclude this problem is global issue for netflix (not local issue)</p>
+					<p>And then we come up with hypothesize what things caused most of users have really low percentage of watch</p>
+					<ul>
+						<li><b>The low percentage of watching activity is caused by users watched film that not match with their interest</b></li>
+						<br>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-8"><span class="image fit"><img src="images/finalproject 22.JPG"></span></div>
+						</div><br>
+						<p>We found in each customer segmentatiion, users already watch films that matched with their interest, even though most of users already matched, Iflix still experienced a low-users activities</p>
+						<li><b>The low percentage of watching activity is caused by an application error </b></li>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-8"><span class="image fit"><img src="images/finalproject 23.JPG"></span></div>
+						</div><br>
+						<p>Due to public data limitation we can not dig dive to this hypothesize, But we found signs that make this hypothesize very possible to happen, we found there are several film that has really low persentage of watch (Comparing films duration Vs how long users watch) with big number of users. 
+						for example Asset 1708 and Asset 4282 are watched by more then 200 users but the precent watch is below 5%, its indicating users might have technical issue while watching,  the relevant team should try to check it further  </p>
+						<li><b>The low percentage of watching activity is caused by rating / users dislike the films</b> </li>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-6"><span class="image fit"><img src="images/finalproject 24.JPG"></span></div>
+						</div>
+						<p>For the beggining we thought that we can not found the rating of Iflix movies on public. and it turns out that this is caused by this Snapshot, This is from Iflix mobile android version. We found all this time Iflix has no space for users to give their rating and comments
+						so we tried to create implicit rating to assess quality of films </p>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-6"><span class="image fit"><img src="images/finalproject 25.JPG"></span></div>
+						</div>
+						<p>We created films clustering by looking from total users watch that films, the average of re-watch activity, and film's genre, and we come up with 4 cluster of films </p>
+						<ul>
+							<li>5 stars rating with total 5 films,  watched by 6.662 users, and re-watch for 16 times in average, with the genre TV_Drama_Chinese, and Movies_Comedy_Indonesian</li>
+							<li>4 stars rating with total 150 films, watched by 1.292 users, and re-watch for 5 times in average, with the genre TV_Drama_Chinese, and Tv_Kids_English</li>
+							<li>3 stars rating with total 10.440 films, watched by 1.292 users, and re-watch for 5 times in average, with the genre TV_Drama_Indonesian</li>
+							<li>Abandoned films with total 6675 films, watched by 4 users, and re-watch for -1 times in average it means users never watch until movies is finished, with the genre TV_Drama_Indonesian</li>
+						</ul>
+						Clearly shows that 3 stars rating dominated 60% form total films that iflix has, and 39% total films is Abandoned films that should be checked immediately by related team</p>
+					</ul>	
+						
+					<p>From hypothesize that we haved test, we come up with the question "How to increase percentage watch of users?"</p>
+
+					<ul>
+						<li><b>Finding factors that correlete with percentage watch</b></li>
+				
+					<div class="row gtr-50 gtr-uniform">
+						<div class="col-8"><span class="image fit"><img src="images/finalproject 26.JPG"></span></div>
+					</div>
+					<p>We discovered No_of_assets(average total asset that watched by each users), not_match (average total asset watched by each users which match with user's interest), and rating(implicit rating to assess quality of films) are factors correlated with pct_watch(Comparing films duration Vs how long users watch)</p>
+						<li><b>How to decreasing Not_match values</b></li>
+					<div class="row gtr-50 gtr-uniform">
+						<div class="col-12"><span class="image fit"><img src="images/finalproject 27.JPG"></span></div>
+					</div>
+					<p>Because of not_match(average total asset watched by each users which match with user's interest) correlated with pct_watch,  we tracked down the iflix asset and came to know that Iflix assets are not accomodating users interest, we can see Iflix asset 80-95% contained TV_shows (on right graph with pink colour), while in other hand, user's iflix 40-90% more interest in Movie Show(on left graph with red colour) this could increasing the risk of users choosing different assets from their interest. </p>
+
+					<li><b>How to increasing no_of_assets values</b></li>
+					<div class="row gtr-50 gtr-uniform">
+						<div class="col-6"><span class="image fit"><img src="images/finalproject 28.JPG"></span></div>
+					</div>
+					<p>In order to increase number of asset watched, we built algortihm that have Hybrid model to be recommendation system for each users based on user's profile, asset's profile, and asset's rating. for example users that have watched film "journey of men" will offer another film that related to each users, and surely AB testing is needed before releasingthe algortihm</p>
+
+					<li><b>How to increasing rating values</b></li><br>
+					<p>As we just have implicit rating for the films, increasing total user that watch the film, and re-watch time for each user will be increasing average rating values, But for better recommendation system alogrithm, we suggest to Adding rating space and comment box on our platform to help us to understand user's individual tastes </p>
+					
+					<li><b>Forcasting data</b></li><br>
+					<div class="row gtr-50 gtr-uniform">
+						<div class="col-6"><span class="image fit"><img src="images/finalproject 31.JPG"></span></div>
+					</div>
+					<p>We built predicton percent watch model with a multivariate linear regression based on no_of_asset,asset_not_match and rating</p>
+
+					<div class="row gtr-50 gtr-uniform">
+						<div class="col-6"><span class="image fit"><img src="images/finalproject 30.JPG"></span></div>
+					</div>
+					<p>if we increase no_of_asset (average total asset that watch by users) values from 6 to 9, increase average rating from 3 to 5, and decrease not_match(average total asset watched by each users which match with user's interest) values form 1 to 0 we will successfully increase our pct_watch(Comparing films duration Vs how long users watch) and it will change our customer cluster that dominated by low quality user to high quality users and surely it will really help the business to improving users stickienst </p>
+
+					</ul>
+				</section>
+				
+				<!-- Seven -->
+				<section id="seven">
+					<h2>Recommendation</h2>
+					<ol>
+						<li>Evaluation for application complaints. Checking for abandoned assets with high number of user-watch to ensure the app not have eror/crash</li>
+						<li>Additional for rating space and comment box. Adding rating space and comment box will help to understand user's individual tastes for better recommendation system alogrithm</li>
+						<li>Further sentiment analysis from social media. Conducting sentiment analysis for original content will also help to understand whether or not the original content is loved by the market</li>
+						<li>Adding more variationof movies or shifting market targets. To impress more users to engage with our platform, iflix could add more variation of movies or shift the marketing targets matching the assets owned by iflix</li>
+						<li>Using Hybrid recommendation system in order to increase number of asset watched based on user's profile, asset's profile, and asset's rating</li>
+					 </ol>
+				</section>
+
+			</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/andika-gumilang-6aa09b113/" class="icon brands fa-linkedin"><span class="label">Twitter</span></a></li>
+					<li><a href="https://github.com/andikapp/" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					<li><a href="mailto:andikapg19@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Andika Putra Gumilang</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
